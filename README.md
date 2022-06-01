@@ -1,2 +1,4 @@
 # Kotlin
-Pasta criada para o bootcamp de desenvolvimento de apps em Kotlin da DIO
+## Links Úteis
+[DIO](https://www.dio.me/)<br>
+[Kotlinlang](https://play.kotlinlang.org/)
