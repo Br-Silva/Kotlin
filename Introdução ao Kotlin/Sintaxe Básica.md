@@ -40,7 +40,8 @@ A inferência de tipo não atribui nullability;
         var month: Int = null<br>
         /*Erro de compilação
         "Null can not be a value of a non-null type Int */
-        
+
+## Operadores
 ### Operadores Aritméticos
 | Função       | Expressão | Comando  | Atribuição* | 
 |--------------|-----------|----------|-------------|
@@ -81,3 +82,46 @@ A inferência de tipo não atribui nullability;
 |range/faixa de valores (Int..Int) | 
 - Se o valor está presente em uma lista ou em uma faixa (range) de valores
 - Range cria um intervalo de valores que inicia no primeiro parâmetro e acaba no segundo
+
+## Manipulação de Strings
+- Strings possuem diversos métodos associados;
+- indexação, concatenação, comparação, formatação; 
+- pode ser concatenada com plus/+;
+- também é tratada como um array de Char
+
+### Indexação
+- String como array;
+- First(), last(), String.length, String\[index\];
+
+                                val s = "Olá, mundo!"
+                                
+                                println(s[0])
+                                println(s.first())
+                                //imprime O
+                                
+                                println(s[s.length-1])
+                                println(s.last())
+                                //imprime !
+                                
+### Concatenação
+- Para concatenar duas strings o plus/+ pode ser utilizado;
+- Para concatenar uma variável a uma String, os simbolos ${} devem ser inseridos;
+
+                                val name = "Ana"
+                                val s = "Olá"
+                                
+                                println(s + name)
+                                //imprime OláAna
+                                println("${s}, ${name}!")                               
+                                //imprime Olá, Ana! 
+                                println(Bem vinda(o), $name!")
+                                //imprime Bem vinda(o), Ana!
+                                
+### Formatação 
+|Nome | Função | Métodos |
+|--- | --- | --- |
+|Capitalização de Strings | Alterar a formatação entre letras minúsculas e maiúsculas | capitalize(), toUpperCase(), toLowerCase(), and decapitalize() |
+|Remoção de espaços | Remove espaços vazios e caracteres inadequadas para impressão | trimEnd(), trimStart(), trim() |
+|Substituição de caracteres | Substituir caracteres por outros | replace (x, y)
+|Formatação | Formatar outros valores para um padrão de string | "padrão ${valor}".format(valor) |
+
