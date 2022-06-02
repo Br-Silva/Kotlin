@@ -125,3 +125,6 @@ A inferência de tipo não atribui nullability;
 |Substituição de caracteres | Substituir caracteres por outros | replace (x, y)
 |Formatação | Formatar outros valores para um padrão de string | "padrão ${valor}".format(valor) |
 
+### Empty x Blank
+- Se o **tamanho da string for 0 está empty e blank** (se não há nada dentro da string, na atribuição foi abrido e fechado aspas sem nada dentro)
+- Se o **tamanho for > 0**, mas todos os caracteres forem espaços em branco, **está blank, mas não está empty**;
