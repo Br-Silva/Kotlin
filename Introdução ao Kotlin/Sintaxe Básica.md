@@ -128,3 +128,39 @@ A inferência de tipo não atribui nullability;
 ### Empty x Blank
 - Se o **tamanho da string for 0 está empty e blank** (se não há nada dentro da string, na atribuição foi abrido e fechado aspas sem nada dentro)
 - Se o **tamanho for > 0**, mas todos os caracteres forem espaços em branco, **está blank, mas não está empty**;
+
+## Funções
+- Prefixo Fun (de function) nomeDaFunção(nome:Tipo):TipoRetorno{}
+- Funções anônimas, single-line, inline, extensões, Lambdas, ordem superior;
+
+                                private fun getFullName(name:String, lastName:String):String{
+                                        val fullName = "$name $lastName"
+                                        return fullname
+                               }
+                               
+                               private fun getFullName(name:String, lastName:String):String{
+                                        return "$name $lastName"
+                               }
+                               
+                               private fun getFullName(name:String, lastName:String) = "$name $lastName"
+                               
+### Funções ordem superior
+- Recebem outra função ou lambda por parâmetro;
+- Bastante úteis para a generalização de funções e tratamento de erros;
+
+                                val x = calculate(12,4,::sum)
+                                val y = calculate(12,4){a,b -> a*b }
+                                
+### Funções single-line
+- Prefixo **Fun nomeDaFunção(nome:Tipo)=retorno**;
+- Função de uma única linha;
+- Infere o tipo de retorno;
+
+                                private fun getFullName(name:String, lastName:String) = "$name $lastName"
+                                
+### Funções/extensões
+- Prefixo **Fun Tipo.nomeDaFunção()**;
+- Cria uma função que só pode ser chamada por um tipo específico, cujo o valor pode ser referenciado dentro da função através da palavra **this**;
+
+                                fun String.randomCapitalizedLetter() = 
+                                        this[(0..this.length-1).random()].toUpperCase()
