@@ -65,3 +65,19 @@ A inferência de tipo não atribui nullability;
 
 - Os comandos **compareTo** retornam os **valores -1 (menor que), 0 (igual) ou 1 (maior)**. Já os operadores retornam **valores booleanos**.
 - O comando **equals** retorna um **boleano**.
+
+### Operadores Lógicos
+|Função e Expressão | Comando |
+|--- | --- |
+|E (&&) | (expressão1) and (expressão2) |
+|Ou (\|\|) | (expressão1) or (expressão2) |
+- Quando utiliza-se o comando, é recomendado colocar a expressão entre parenteses
+
+### Operadores In e Range
+|Função e Expressão |
+|---|
+|contém (In) | 
+|não contém (!in) |
+|range/faixa de valores (Int..Int) | 
+- Se o valor está presente em uma lista ou em uma faixa (range) de valores
+- Range cria um intervalo de valores que inicia no primeiro parâmetro e acaba no segundo
