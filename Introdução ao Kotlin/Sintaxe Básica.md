@@ -241,3 +241,53 @@ elvis operator
 Nesse caso, se o valor de **a não for nulo**, number **recebe a**.
 Se o valor de **a for nulo** e **b não for nulo**, number **recebe b**.
 Se **a e b forem nulos**, number recebe 0.
+
+## Estruturas de Repetição
+- While, do..while, for e forEach;
+- Estruturas similares às convencionais em outras linguagens;
+- Aceita os comandos **in, range, untill, downTo e step**;
+
+        while(Condição){
+        }
+  
+<br>
+
+        do{
+           //bloco
+        } while(Condição)
+        
+<br>
+
+        for(i in 0..20 step 2){
+                println(i)
+        }
+### For
+- **for**(variavelIndexadora **in/untill/downTo** faixa de valores/condicional **step** intervalo)
+- **in**: conta do valor inicial até o valor final estabelecido
+- **untill**: conta do valor atual até o valor estabelecido menos 1;
+- **downTo**: conta de maneira decrescente;
+- **step**: determina o intervalo da contagem;
+
+        for(i in 0..20 step 2){
+                println(i)
+        }
+        
+<br>
+
+        for(i in 10 downTo 0){
+                println(i)
+        }
+        
+<br>
+
+        for(i in 0 untill 10){
+                println(i)
+        }
+    
+<br>
+
+        var text= "Kotlin"
+        for(letter in text){
+                println(letter)
+        }
+<br>
