@@ -164,3 +164,80 @@ A inferência de tipo não atribui nullability;
 
                                 fun String.randomCapitalizedLetter() = 
                                         this[(0..this.length-1).random()].toUpperCase()
+                                        
+### Estruturas de controle
+- if/else, when, elvis operator;
+- Pode ser utilizado tanto para controle quanto para atribuição;
+- Pode ser encadeado com múltiplas estruturas;
+
+if/else
+
+        if(expressão){
+                //bloco de código
+        }else if (expressão2){
+                //bloco de código
+        }else{
+                //bloco de código
+        }
+        
+when 
+
+        when {
+                case1 -> {}
+                case2 -> {}
+                case3 -> {}
+                else -> {}
+        }
+        
+elvis operator  
+
+        val a:Int? = null
+        var number = a ?: 0
+        
+### Atribuição
+- O valor atribuído tem que estar na última linha do bloco;
+- A condicional pode não usar chaves se só fizer a atribuição
+
+        val maxValue = if (a > b) a else if (a < b) b else b
+                val minValue = if (a > b){
+                        println("b($b) é o menor valor")
+                        b
+                }else if(a < b){
+                        println("a($a) é o menor valor")
+                        a
+                }
+                
+### When 
+- Equivalente ao switch de outras linguagens;
+- Aceita tanto valores quanto condicionais;
+- Aceita range como case;
+
+        when {
+                a > b -> {}
+                a != b && a > c -> {}
+                b == 0 -> {}
+                else -> {}
+        }
+        
+<br>
+
+        when(year) {
+          -4000..475 -> //Antiguidade
+          476..1452 -> //Medieval
+          1453..1789 -> //Moderna
+          currentYear -> //ano atual
+        }
+        
+### Elvis Operator
+- O mais próximo que a linguagem possui de um operador ternário;
+- Verifica se um valor é nulo e apresenta uma opção caso seja;
+- Pode ser encadeado;
+
+        val a:Int? = null
+        val c:Int? = 9
+        var number = a?: b?: 0
+      
+<br>
+Nesse caso, se o valor de **a não for nulo**, number **recebe a**.
+Se o valor de **a for nulo** e **b não for nulo**, number **recebe b**.
+Se **a e b forem nulos**, number recebe 0.
