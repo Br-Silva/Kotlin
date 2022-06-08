@@ -24,7 +24,7 @@
 | Ctrl + N | Busca rápida de classes |
 | Ctrl + Shift + N | Busca rápida de arquivos |
 | Ctrl + B | Inspecionar elemento - go to class, method, declaration, etc |
-| Ctrl + Alt + L | Reformatar código |
+| Ctrl + Alt + L | Reformatar/Identar código |
 | Ctrl + Alt + M | Extrair método - transforma código selecionado em método |
 | Shift + F6 | Renomeia classe, variável, método, etc |
 | Ctrl + Shift + F6 | Usar referência de outra classe |
