@@ -1,0 +1,10 @@
+O que é o Android, em quais plataformas podemos rodar Apps Android e os benefícios de criar um App Android
+O Android é um sistema operacional baseado em Linux focado em oferecer uma interface de interação com usuário por meio de toques e gestos. Além de rodar em smartphones e tablets, Apps Android podem rodar em smartwatches (Wear OS), smart TVs, automóveis, notebooks com Chrome OS e IoT. Ao desenvolver um App, somos capazes de alcançar bilhões de pessoas a partir da Play Store e também podemos utilizar recursos do sistema e dispositivos para melhorar a experiência do usuário, como câmeras, GPS, sensores e conectividade.
+Como preparar o ambiente e criar um projeto Android
+Aprendemos a instalar e inicializar a IDE oficial da Google, o Android Studio. Durante a instalação também instalamos o Android SDK para acessar o framework do Android.
+O que é uma Activity e como configurar uma do zero
+Diferente de muitos programas, no Android não temos um método main para rodar o App. Como ponto de entrada de um App, utilizamos a Activity, um componente do Android que apresenta a tela para o usuário utilizando Views e lógica. As Activities são criadas a partir de uma classe Kotlin ou Java, que herdam de Activity. Para que o sistema do Android reconheça a Activity, registramos no arquivo de manifesto do Android (AndroidManifest.xml).
+O que é o AVD Manager e como criar dispositivos virtuais (emuladores)
+Para executar um App, precisamos de um dispositivo que opere Android, no nosso contexto, um smartphone ou tablet. O Android Studio oferece o AVD (Android Virtual Device) Manager para criar dispositivos virtuais, emuladores que rodam Android. A partir dele, selecionamos um modelo de dispositivo e uma imagem do sistema Android, então, podemos rodar e simular um dispositivo.
+Como rodar um App Android em dispositivos físicos ou virtuais
+Além de usar um emulador, também temos a opção de executar Apps a partir de dispositivos físicos que rodam Android, como smartphones ou tablets. Para que isso seja possível, é necessário utilizar o modo de desenvolvedor, ativar o modo de depuração (debug) e conectar o celular com o computador via cabo USB.
